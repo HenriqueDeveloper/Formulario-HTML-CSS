@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulário HTML5</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend><b>Formulário <br> de <br> Cadastro</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required />
+          <label for="nome" class="labelInput">Nome do Paciente</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required />
+          <label for="nome" class="labelInput">Registro Hospitalar</label>
+        </div>
+        <br>
+        <br>
+        <div class="inputBox">
+          <input type="text" name="email" id="email" class="inputUser" required />
+          <label for="email" class="labelInput">Email</label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <p>Sexo:</p>
+          <input type="radio" id="Feminino" name="Sexo" value="feminino" required />
+          <label for="feminino">Feminino</label>
+          <br>
+          <input type="radio" id="Masculino" name="Sexo" value="Masculino" required />
+          <label for="masculino">Masculino</label>
+          <br>
+          <input type="radio" id="outro" name="Sexo" value="outro" required />
+          <label for="outro">Outro</label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <label for="data_nascimento"><b>Data de nascimento:</b></label>
+          <input type="date" name="data_nascimento" id="data_nascimento" class="inputUser" required />
+        </div>
+        <br>
+        <div class="form_div">
+          <label for="raca_declarada"><b>Raça Declarada:</b></label>
+           <br>
+          <select name="raca_declarada" id="raca_declarada">
+            <option value="Branca">Branca</option>
+            <option value="Negra">Negra</option>
+            <option value="Parda">Parda</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Indigena">Indígena</option>
+            <option value="Desconhecida">Desconhecida</option>
+          </select>
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Enviar" id="submit">
+        <br><br>
+        <div class="form_div">
+          <label for="sabendo_estudo"><b>Como ficou sabendo do estudo:</b></label>
+          <br>
+          <select name="sabendo_estudo" id="sabendo_estudo">
+            <option value="Internet">Internet</option>
+            <option value="Amigos">Amigos</option>
+            <option value="Familiares">Familiares</option>
+            <option value="Convidado">Convidado</option>
+            <option value="Outros">Outros</option>
+          </select>
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Enviar" id="submit">
+      </fieldset>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
